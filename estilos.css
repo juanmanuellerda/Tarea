@@ -1,0 +1,94 @@
+body{
+    background: rgb(202, 230, 216);
+}
+
+header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    width: 96.5%;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    color: rgb(243, 235, 235); 
+    background: rgb(154, 194, 154);
+}
+
+.ContenedorFlexible{
+    display: flex;
+    /*flex-direction: row ;
+    flex-wrap: wrap;*/
+    flex-flow: row wrap;
+    align-items: center;
+
+    }
+
+.caja {
+    list-style: none;
+    border: 1px solid black; 
+    font-size: larger;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ; 
+    text-align: center;
+    
+    margin: auto;
+    line-height: 50px;
+    width: 30%;
+    height: 600px;
+    background-color: rgb(180, 219, 141);
+}
+
+.registrarme {
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    color: rgb(243, 235, 235); 
+    width: 30%;
+    text-align: center;
+    margin: auto ;
+    float: center;
+    background: rgb(154, 194, 154);
+}
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+footer {
+    list-style: none;
+    float: center;
+    text-align: center;
+    margin: 10px;
+
+}
+
+.clearfix{
+    clear: both;
+}
+
+
+.post{
+    text-align: justify;
+}
+
+#registrarse{
+    margin: 10px;
+    font-size:larger ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ; 
+}
+
+form{
+    list-style: none;
+    margin: 10px;
+    font-size:large ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ; 
+    text-align: left;
+}
+
+#email {
+    margin-left: 21px;
+ }
+
+ #edad{
+    margin-left: 26px;
+ }
+
