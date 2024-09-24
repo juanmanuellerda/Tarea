@@ -1,46 +1,43 @@
-
+var objetoTemp = {
+    id: id = 0,
+    nombre: null,
+    apellido: null,
+    edad: null,
+    email: null
+};
 
 var pila = [];
-var id = 0;
-var app = this;
 
+var app = this;
 fetch('https://my-json-server.typicode.com/juanmanuellerda/RepoJSON/lista')
     .then(response => response.json())
-   
-    .then(lista => {console.log(lista);
+    .then(lista => {
+        console.log(lista);
         app.datos = lista;
-        })
-    
+    })
+
 cargar = () => {
-    var objetoTemp = {
-        id: id,    
-        nombre: null,
-        apellido: null,
-        edad: null,
-        email: null    
-            };    
-      
+
     var nombre = document.getElementById("nombre").value;
     var apellido = document.getElementById("apellido").value;
     var edad = document.getElementById("edad").value;
     var email = document.getElementById("email").value;
-    
+
     registrarse.innerText = 'REGISTRADO';
 
     objetoTemp = {
-        id: pila.length + 1, 
+        id: pila.length,
         nombre: nombre,
         apellido: apellido,
         edad: edad,
-        email: email    
-        };
-   
-    pila.push(objetoTemp);
-    //console.log(pila);
-    
-    
-};
+        email: email
+    };
 
+
+    pila.push(objetoTemp);
+    console.log("Pila:");
+    console.log(pila);
+};
 
 /*fetch('https://my-json-server.typicode.com/juanmanuellerda/RepoJSON/lista', {
     method: 'POST',
